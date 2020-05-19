@@ -625,6 +625,7 @@ public class CommitProcessor extends ZooKeeperCriticalThread implements RequestP
         queuedRequests.clear();
         if (workerPool != null) {
             workerPool.stop();
+            workerPool = null;
         }
     }
 

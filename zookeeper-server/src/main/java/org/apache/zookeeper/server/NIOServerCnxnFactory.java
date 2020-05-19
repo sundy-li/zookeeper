@@ -885,6 +885,7 @@ public class NIOServerCnxnFactory extends ServerCnxnFactory {
         }
         if (workerPool != null) {
             workerPool.stop();
+            workerPool = null;
         }
     }
 
